@@ -2,7 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Abril Fatface", serif;
+    font-weight: 300;
 }
 
 :root {
@@ -15,12 +16,61 @@
     --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-body {
-    min-height: 100vh;
-    background: linear-gradient(135deg, var(--dark), #2d0000);
-    color: var(--light);
-    overflow-x: hidden;
-    position: relative;
+html {
+    scroll-behavior: smooth;
+  }
+  
+
+body{
+    width: 100%;
+  height: 100%;
+  margin-bottom: 150px;
+  background: radial-gradient(
+        circle farthest-side at 0% 50%,
+        #282828 23.5%,
+        rgba(255, 170, 0, 0) 0
+      )
+      21px 30px,
+    radial-gradient(
+        circle farthest-side at 0% 50%,
+        #2c3539 24%,
+        rgba(240, 166, 17, 0) 0
+      )
+      19px 30px,
+    linear-gradient(
+        #282828 14%,
+        rgba(240, 166, 17, 0) 0,
+        rgba(240, 166, 17, 0) 85%,
+        #282828 0
+      )
+      0 0,
+    linear-gradient(
+        150deg,
+        #282828 24%,
+        #2c3539 0,
+        #2c3539 26%,
+        rgba(240, 166, 17, 0) 0,
+        rgba(240, 166, 17, 0) 74%,
+        #2c3539 0,
+        #2c3539 76%,
+        #282828 0
+      )
+      0 0,
+    linear-gradient(
+        30deg,
+        #282828 24%,
+        #2c3539 0,
+        #2c3539 26%,
+        rgba(240, 166, 17, 0) 0,
+        rgba(240, 166, 17, 0) 74%,
+        #2c3539 0,
+        #2c3539 76%,
+        #282828 0
+      )
+      0 0,
+    linear-gradient(90deg, #2c3539 2%, #282828 0, #282828 98%, #2c3539 0%) 0 0
+      #282828;
+  background-size: 40px 60px;
 }
 
 /* BOTTON-NAV */
@@ -31,8 +81,8 @@ body {
     left: 0;
     width: 100%;
     height: 70px;
-    background: rgba(26, 0, 0, 0.95);
-    backdrop-filter: blur(10px);
+    background: rgba(95, 5, 23, 0.76);
+    backdrop-filter: blur(5px);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -68,6 +118,8 @@ body {
     left: 50%;
     transform: translateX(-50%);
     background: var(--primary);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
     padding: 0.5rem 1rem;
     border-radius: 4px;
     font-size: 0.8rem;
@@ -185,6 +237,7 @@ body {
     margin-bottom: 1rem;
     line-height: 1.2;
     position: relative;
+    color: var(--light);
 }
 
 .hero-title::after{
@@ -209,14 +262,17 @@ body {
 }
 
 .hero-subtitle{
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     margin-bottom: 2rem;
+    font-weight:lighter;
     color: rgba(255, 255, 255, 0.8);
 }
 
 .hero-description{
     line-height: 1.6;
     margin-bottom: 2rem;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 600;
     color: rgba(255, 255, 255, 0.7);
 }
 
@@ -239,12 +295,16 @@ body {
 .btn-primary{
     background: var(--primary);
     color: var(--light);
+    font-family: 'Poppins',sans-serif;
+    font-weight: 500;
 }
 
 .btn-outline{
     background: transparent;
     border: 2px solid var(--primary);
     color: var(--light);
+    font-family: 'Poppins',sans-serif;
+    font-weight: 500;
 }
 
 .btn::before{
@@ -324,6 +384,277 @@ body {
     }
 }
 
+
+
+/* HERO 2 */
+
+
+.hero-2{
+    
+    height: 130vh;
+    padding-left: 5%;
+}
+
+.hero-2-title {
+    font-size: 3.5rem;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--light);
+    position: relative;
+    padding-left: 3%;
+}
+
+.hero-2-title::after {
+    content: "";
+    width: 120px;
+    height: 4px;
+    background: var(--primary);
+    display: block;
+    border-radius: 2px;
+    margin-top: 8px;
+}
+
+.project-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 90%;
+    margin: 50px;
+    justify-content: flex-start;
+    
+}
+
+.project{
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    background: #8ccede;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(3, 3, 3, 0.927);
+    margin: 10px 0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.project:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); 
+}
+
+.project-image{
+    width: 100%;
+    border-radius: 5px;
+    
+}
+
+.project-title{
+    font-size:1.3rem;
+    font-weight: bolder;
+    padding-top: 10px;
+}
+
+.project p{
+    color: rgb(0, 0, 0);
+    padding-top: 15px;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 500;
+}
+
+.tecno{
+    position: relative;
+    padding:10px;
+    right: 10px;
+    
+    
+}
+
+.tecno span i{
+    padding: 5px;
+}
+
+.tecno span{
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.tec-html{
+    background: #ff8000;
+    border-radius: 2px;
+    font-size: 0.9rem;
+    color: #000;
+    text-align: center;
+    font-weight: 700;
+    padding: 5px 10px;
+    
+}
+
+
+.tec-css{
+    background: #007fff;
+    border-radius: 2px;
+    font-size: 0.9rem;
+    color: #000;
+    text-align: center;
+    font-weight: 700;
+    padding: 5px 10px;
+    
+}
+
+
+.tec-js{
+    background: #ffd000;
+    border-radius: 2px;
+    font-size: 0.9rem;
+    color: #000;
+    text-align: center;
+    font-weight: 700;
+    padding: 5px 10px;
+    
+}
+
+.tec-java{
+    background: #CED6E1;
+    border-radius: 2px;
+    font-size: 0.9rem;
+    color: #000;
+    text-align: center;
+    font-weight: 700;
+    padding: 5px 10px;
+}
+
+.tec-inso{
+    background: #883ec9;
+    border-radius: 2px;
+    font-size: 0.9rem;
+    color: #000;
+    text-align: center;
+    font-weight: 700;
+    padding: 5px 10px
+}
+
+.tec-postgre{
+    background: #CED6E1;
+    border-radius: 2px;
+    font-size: 0.9rem;
+    color: #000;
+    text-align: center;
+    font-weight: 700;
+    padding: 5px 10px
+}
+
+
+.hero-3 {
+    height: 150vh;
+    display: flex;
+    justify-content:flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    position: relative;
+}
+
+.responsive-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+   
+}
+
+
+.hero-3-title {
+    font-size: 3.5rem;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--light);
+    position: relative;
+    padding-left: 8%;
+
+
+}
+
+.hero-3-title::after {
+    content: "";
+    width: 120px;
+    height: 4px;
+    background: var(--primary);
+    display: block;
+    border-radius: 2px;
+    margin-top: 8px;
+}
+
+.hero-3-description p {
+    padding-left: 8%;
+    font-family: 'Poppins',sans-serif;
+    line-height: 1.2;
+    color: var(--light);
+    
+}
+
+#about-me .hero-3-description p {
+    font-size: 1.5rem;
+
+}
+
+
+.hero-3-subtitle{
+    font-size: 2.5rem;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--light);
+    position: relative;
+    padding-left: 8%;
+    padding-top: 25px;
+}
+
+.hero-3-subtitle::after{
+    content: "";
+    width: 120px;
+    height: 4px;
+    background: var(--primary);
+    display: block;
+    border-radius: 2px;
+    margin-top: 8px;
+}
+
+ul li {
+    text-decoration: none;
+    line-height: 1.4;
+    padding-left: 8%;
+   font-family: 'Poppins',sans-serif;
+   color: var(--light);
+    
+  }
+  
+  ul li .hero-3-span {
+    font-size: 1.3em;  /* Mantiene el tamaño grande del texto dentro de strong */
+    
+    font-weight: 100;
+     color: #7ec8db;
+  }
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* RESPONSIVE DESIGN */
 @media (max-width:1200px){
     .hero-content{
@@ -367,7 +698,37 @@ body {
         width: 400px;
         height: 400px;
     }
+    
+   
 }
+
+@media screen and (max-width: 924px){
+    .hero-3-title{
+        font-size: 2.2rem;
+    }
+    .responsive-container{
+        position: relative;
+        top: 45%;
+        left: 20px;
+    }
+    
+}
+
+.hero-3-description p {
+    font-size: 1.2rem;
+}
+
+.hero-3-subtitle {
+    font-size: 2rem;
+}
+
+.uls-tec li {
+    font-size: 1.2rem;
+}
+
+
+
+
 
 @media (max-width: 768px){
     .hero{
@@ -426,6 +787,24 @@ body {
         left: 24.5%;
         transform: translateX(-50%);
     }
+    .hero-3{
+        position: relative;
+        bottom: 150px;
+        
+    }
+    
+
+   
+    
+    
+}
+
+@media(max-width: 610px){
+    .hero-2{
+        height: 100%;
+        margin-bottom: -150px;
+        
+    }
 }
 
 @media(max-width: 500px){
@@ -475,7 +854,10 @@ body {
     .social-links{
         left: 0.5rem;
     }
+
 }
+
+
 
 @media(max-width:390px){
     .hero{
@@ -542,5 +924,9 @@ body {
         width: 30px;
         height: 30px;
         font-size: 0.8rem;
+    }
+    .responsive-container{
+        position: relative;
+        left: 20px;
     }
 }

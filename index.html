@@ -4,15 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anna's Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <section class="hero">
+    <section id="home"  class="hero">
         <div class="social-links">
-            <a href="#" class="social-link"><i class="fa-brands fa-github"></i></a>
-            <a href="#" class="social-link"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://github.com/ann117v1" class="social-link" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/ana-caicedo-dsp/" class="social-link" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/anncl0wn_/" class="social-link" target="_blank"><i class="fa-brands fa-instagram"></i></a>
         </div>
 
         <div class="hero-content">
@@ -28,7 +31,7 @@
                 </p>
 
                 <div class="cta-buttons">
-                    <a href="#" class=" btn btn-primary">View Projects</a>
+                    <a href="certificates.html" target="_blank" class=" btn btn-primary">View Certificates</a>
                     <a href="#" class=" btn btn-outline">Download CV</a>
                 </div>
             </div>
@@ -40,17 +43,118 @@
         </div>
     </section>
 
+    <section class="hero-2">
+        <h1 class="hero-2-title">What I've Built</h1>
+        <div class="project-container">
+            <div class="project">
+                <a href="https://challenge-encriptador-beryl.vercel.app/" target="_blank">
+                <img src="./img/encriptador.jpeg" alt="encriptador alura" class="project-image">
+                </a>
+                <h3 class="project-title">Phrase Encryptor</h3>
+                <p>Web application responsive developed to encrypt and decrypt messages using a character substitution algorithm, implementing DOM manipulation.</p>
+                <div class="tecno">
+                    <span class="tec-html"><i class="fa-brands fa-html5"></i>HTML</span>
+                    <span class="tec-css"><i class="fa-brands fa-css3-alt"></i>CSS</span>
+                    <span class="tec-js"><i class="fa-brands fa-js"></i>JavaScript</span>
+                </div>
+            </div>
+
+            <div class="project">
+                <a href="https://e-comerce-weld-nine.vercel.app/" target="_blank">
+                <img src="./img/e-comerce.jpeg" alt="home E-comerce" class="project-image">
+                </a>
+                <h3 class="project-title">Home E-comerce</h3>
+                <p>A basic static e-commerce (No Responsive) model showcasing a simple and clean design for displaying products, managing a user-friendly interface, and simulating an online shopping experience.</p>
+                <div class="tecno">
+                    <span class="tec-html"><i class="fa-brands fa-html5"></i>HTML</span>
+                    <span class="tec-css"><i class="fa-brands fa-css3-alt"></i>CSS</span>
+                </div>
+            </div>
+
+            <div class="project">
+                <a href="https://log-in-sign-up-ivory.vercel.app/" target="_blank">
+                <img src="./img/login.jpeg" alt="login-signup" class="project-image">
+                </a>
+                <h3 class="project-title">Login & Signup</h3>
+                <p>A visually-focused landing page created to demonstrate user authentication, featuring both login and signup forms. The project emphasizes clean design and user interaction, offering a seamless experience for navigating between the forms and simulating the process of user registration and login.</p>
+                <div class="tecno">
+                    <span class="tec-html"><i class="fa-brands fa-html5"></i>HTML</span>
+                    <span class="tec-css"><i class="fa-brands fa-css3-alt"></i>CSS</span>
+                    <span class="tec-js"><i class="fa-brands fa-js"></i>JavaScript</span>
+                </div>
+            </div>
+
+            <div class="project">
+                <a href="https://github.com/ann117v1/APIRest" target="_blank">
+                <img src="./img/APIrest.png" alt="APIrest" class="project-image">
+                </a>
+                <h3 class="project-title">APIrest</h3>
+                <p>A REST API for a forum that manages all CRUD (Create, Read, Update, Delete) operations with token-based authentication. The project ensures secure access control and provides a robust back-end for managing user interactions, posts, and forum data.</p>
+                <div class="tecno">
+                    <span class="tec-java"><i class="fa-brands fa-java"></i>Java</span>
+                    <span class="tec-inso"><i class="fa-solid fa-moon fa-flip-horizontal"></i>Insomnia</span>
+                    <span class="tec-postgre"><i class="fa-solid fa-database"></i>PostgreSQL</span>
+                </div>
+            </div>
+
+            <div class="project">
+                <a href="https://github.com/ann117v1/libreriaPersonal" target="_blank">
+                <img src="./img/libreria.png" alt="filtra libros" class="project-image">
+                </a>
+                <h3 class="project-title">Personal Bookstore</h3>
+                <p>An interactive Java-based console project designed to manage a personal library using APIs. Users can search for books and choose how to display the results through a dynamic menu system, offering an efficient and user-friendly experience.</p>
+                <div class="tecno">
+                    <span class="tec-java"><i class="fa-brands fa-java"></i>Java</span>
+                </div>
+            </div>
+
+            <div class="project">
+                <a href="https://github.com/ann117v1/Conversor-De-Moneda" target="_blank">
+                <img src="./img/conversor.png" alt="converter" class="project-image">
+                </a>
+                <h3 class="project-title">Currency Converter</h3>
+                <p>A web-based application utilizing APIs to provide currency conversion between selected countries. This project demonstrates the integration of external data sources and showcases dynamic exchange rate calculations for an intuitive and accurate user experience.</p>
+                <div class="tecno">
+                    <span class="tec-java"><i class="fa-brands fa-java"></i>Java</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about-me" class="hero-3">
+        <div class="responsive-container">
+            <h1 class="hero-3-title">About Me</h1>
+            <div class="hero-3-description">
+                <p>
+                    I am a developer with 3 years of programming experience. I recently completed an intensive bootcamp by Alura in partnership with Oracle, specializing in back-end development. While I have basic front-end knowledge for working on simple projects, my primary focus lies in the development and maintenance of back-end systems.
+                    <br>
+                    I am fluent in both English and Spanish and enjoy translating texts as an independent hobby. Additionally, I have gained experience through independent projects, allowing me to apply and expand my knowledge in a practical way.
+                </p>
+            </div>
+            <h2 class="hero-3-subtitle">Studies and Technologies</h2>
+            <ul class="uls-tec">
+                <li><span class="hero-3-span">Programming Languages:</span> Java, C, JavaScript, HTML, CSS.</li>
+                <li><span class="hero-3-span">Frameworks and Tools:</span> Spring Boot, Visual Studio Code, IntelliJ IDEA, Code::Blocks.</li>
+                <li><span class="hero-3-span">Databases:</span> PostgreSQL.</li>
+                <li><span class="hero-3-span">Additional Skills:</span> API management, CRUD operations.</li>
+            </ul>
+        </div>
+    </section>
+    
+      
+      
+
 
     <nav class="bottom-nav">
         <ul class="nav-links">
             <li>
-                <a href="#" class="nav-link" data-tooltip="Home"><i class="fa-solid fa-house"></i></a>
+                <a href="#home" class="nav-link" data-tooltip="Home"><i class="fa-solid fa-house"></i></a>
             </li>
             <li>
-                <a href="#" class="nav-link" data-tooltip="About"><i class="fa-solid fa-user"></i></a>
+                <a href="#about-me" class="nav-link" data-tooltip="About"><i class="fa-solid fa-user"></i></a>
             </li>
             <li>
-                <a href="#" class="nav-link" data-tooltip="Message"><i class="fa-solid fa-envelope"></i></a>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=anacaicedo117@gmail.com" target="_blank" class="nav-link" data-tooltip="Message"><i class="fa-solid fa-envelope"></i></a>
             </li>
         </ul>
     </nav>

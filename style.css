@@ -86,7 +86,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 1000;
+    z-index: 100;
     border-top: 1px solid rgba(255, 23, 68, 0.2);
 }
 
@@ -554,6 +554,7 @@ body{
     align-items: flex-start;
     flex-direction: column;
     position: relative;
+    
 }
 
 .responsive-container {
@@ -724,6 +725,7 @@ ul li {
 
 .uls-tec li {
     font-size: 1.2rem;
+    list-style: none;
 }
 
 
@@ -789,7 +791,9 @@ ul li {
     }
     .hero-3{
         position: relative;
-        bottom: 150px;
+        top: 1px;
+        
+        
         
     }
     
@@ -841,6 +845,7 @@ ul li {
     .nav-links{
         gap: 1rem;
     }
+
     .nav-link{
         width: 40px;
         height: 40px;
@@ -855,9 +860,13 @@ ul li {
         left: 0.5rem;
     }
 
+    .hero-3{
+        position: relative;
+        height: 2000px;
+    }
+
+   
 }
-
-
 
 @media(max-width:390px){
     .hero{
@@ -895,6 +904,10 @@ ul li {
         margin-left: 1rem;
         margin-right: 1rem;
     }
+    .hero-3{
+        position: relative;
+        height: 2000px;
+    }
 }
 
 
@@ -928,5 +941,9 @@ ul li {
     .responsive-container{
         position: relative;
         left: 20px;
+        height: 2002px;
+       
     }
+
+    
 }

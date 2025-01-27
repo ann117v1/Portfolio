@@ -3,18 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <title>Certificates</title>
     <link rel="stylesheet" href="style2.css">
 </head>
 <body>
-    <h1>Mis Certificados</h1>
-  <div class="certificados-grid">
-    <div class="certificado">
-      <img src="./imgC/Cerciticate-js.png" alt="Certificado de JavaScript">
-      <p>Certificate of Programming Logic in JavaScript</p>
-      <a href="ruta-certificado1.pdf" target="_blank">Descargar</a>
+  <div class="main-container">
+    <div class="slide-container">
+      <div class="slides">
+        <img src="./imgC/Cerciticate-js.png" alt="java-script" class="active">
+        <img src="./imgC/certi.Spring2.png" alt="spring2">
+        <img src="./imgC/certificate-Spring.png" alt="Spring">
+        <img src="./imgC/Certificate-POO.png" alt="poo">
+      </div>
+  
+      <div class="buttons">
+        <span class="next">&#10095;</span>
+        <span class="prev">&#10094;</span>
+      </div>
+      
+      <div class="dotsContainer">
+        <div class="dot active" attr='0' onclick="switchImage(this)"></div>
+        <div class="dot" attr='1' onclick="switchImage(this)"></div>
+        <div class="dot" attr='2' onclick="switchImage(this)"></div>
+        <div class="dot" attr='3' onclick="switchImage(this)"></div>
+      </div>
     </div>
-    <!-- Más certificados aquí -->
+  
+    <div class="text-content">
+      <h2>Check out my full Training:</h2>
+      <a href="https://app.aluracursos.com/user/anacaicedo117/fullCertificate/7b1c9092cdbe1673959aa1a6ab3f8142"  class=" btn btn-outline" target="_blank">Click here!!!</a>
+    </div>
   </div>
+  
+
+    <script src="script.js"></script>
 </body>
 </html>

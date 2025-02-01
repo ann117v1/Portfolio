@@ -391,8 +391,7 @@ body{
 
 .hero-2{
     
-    height: 130vh;
-    padding-left: 5%;
+   padding: 5% 0;
 }
 
 .hero-2-title {
@@ -403,7 +402,7 @@ body{
     text-transform: uppercase;
     color: var(--light);
     position: relative;
-    padding-left: 3%;
+    padding-left: 8%;
 }
 
 .hero-2-title::after {
@@ -421,8 +420,8 @@ body{
     flex-wrap: wrap;
     gap: 20px;
     width: 90%;
-    margin: 50px;
-    justify-content: flex-start;
+    margin: 50px auto;
+    justify-content: center;
     
 }
 
@@ -436,8 +435,8 @@ body{
     box-shadow: 20px 20px 30px rgba(3, 3, 3, 0.927);
     margin: 10px 0;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    position: relative;
-    overflow: hidden;
+    
+    
 }
 
 .project:hover {
@@ -548,12 +547,13 @@ body{
 
 
 .hero-3 {
-    height: 150vh;
+    
     display: flex;
     justify-content:flex-start;
     align-items: flex-start;
     flex-direction: column;
     position: relative;
+    padding: 2rem 0;
     
 }
 
@@ -642,18 +642,6 @@ ul li {
   }
 
  
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* RESPONSIVE DESIGN */
@@ -749,6 +737,10 @@ ul li {
         padding-left: 0;
         text-align: center;
     }
+
+    .project{
+        width: 90%;
+    }
     .hero-text{
         order: 2;
     }
@@ -807,7 +799,12 @@ ul li {
     .hero-2{
         height: 100%;
         margin-bottom: -150px;
+        padding-left: 4%;
         
+    }
+
+    .hero-3{
+        padding-top: 23%;
     }
 }
 
@@ -861,10 +858,11 @@ ul li {
     }
 
     .hero-3{
-        position: relative;
-        height: 2000px;
+       height: auto;
     }
-
+    .responsive-container{
+        padding-top: 60px;
+    }
    
 }
 
@@ -904,10 +902,7 @@ ul li {
         margin-left: 1rem;
         margin-right: 1rem;
     }
-    .hero-3{
-        position: relative;
-        height: 2000px;
-    }
+    
 }
 
 
@@ -938,12 +933,7 @@ ul li {
         height: 30px;
         font-size: 0.8rem;
     }
-    .responsive-container{
-        position: relative;
-        left: 20px;
-        height: 2002px;
-       
-    }
-
+    
+   
     
 }

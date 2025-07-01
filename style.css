@@ -249,7 +249,7 @@ body{
     height:4px;
     background: var(--primary);
     animation: width 1s ease-in-out;
-    forwards: 1s;
+   
 }
 
 @keyframes width{
